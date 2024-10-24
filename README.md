@@ -1,2 +1,4 @@
-# csd-340
-Repository for work in the CSD 340 class at Bellevue University
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+* John Woods
+* Christopher Reaney
