@@ -1,0 +1,50 @@
+#container{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1{
+    background-color:darkolivegreen;
+    border: 1px;
+    border-style: solid;
+    border-color: #D6A800;
+    padding: 10px;
+}
+
+h2{
+    background-color:darkolivegreen;
+    border: 1px;
+    border-style: solid;
+    border-color: #D6A800;
+    padding: 10px;
+}
+
+h3{
+    background-color:darkolivegreen;
+    border: 1px;
+    border-style: solid;
+    border-color: #D6A800;
+    padding: 10px;
+}
+
+h4{
+    background-color:darkolivegreen;
+    border: 1px;
+    border-style: solid;
+    border-color: #D6A800;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: darkgreen;
+}
+
+a:hover{
+    color: green;
+}
+
+a:visited{
+    color: goldenrod;
+}
