@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Name: Christopher Reaney
+    Assignment 10.3 -->
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name="description" content="This page is an assignment for the CSD-340 class" />
+    <meta name="author" content="Christopher Reaney" />
+    <meta name="keywords" content="school, assignment" />
+    <meta name="robots" content="nofollow" />
+    <link rel="stylesheet" href="Reaney_Mod10_3.css">
+
+    <script>
+        function displayImage(imageFile){
+          var largerImage = document.getElementById("mainImage");
+          var newNode = document.createElement("img");
+          newNode.id = "mainImage";
+          newNode.src = imageFile;
+          newNode.alt = "Large Image";
+          newNode.className = "mainImage";
+          newNode.style.width = "300px";
+          newNode.style.height = "200px";
+          largerImage.parentNode.replaceChild(newNode, largerImage);
+          
+        }
+      </script>
+
+</head>
+
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+
+    <br />
+    <div>
+      <a href=#
+      onclick="meme.src='imgs/meme_regular.jpeg';">
+        <img border = 0 name = "meme" src = "imgs/meme_negative.jpeg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='blue';"
+         onmouseout= "this.style.color='black';">
+
+      Click on the image to change.
+      <br />
+
+    </div>
+    <hr>
+    <div>
+      <a href=#
+      onclick="burger.src='imgs/burg-regular.jpg';">
+        <img id="burger" border = 0 name = "burger" src = "imgs/burg-negative.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='blue';"
+         onmouseout= "this.style.color='black';">
+
+        Click on the image to change.
+    </div>
+
+
+</body>
+
+</html>
