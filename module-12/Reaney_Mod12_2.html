@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Name: Christopher Reaney -->
+    <!-- Assignment 3.3 -->
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <meta name="description" content="This page is an assignment for the CSD-340 class" />
+    <meta name="author" content="Christopher Reaney" />
+    <meta name="keywords" content="school, assignment" />
+    <link href="Reaney_Mod12_2.css" type="text/css" rel="stylesheet" />
+
+    <script>
+        // Array of top ten books
+        var listOfBooks = [
+            "Leviathan Wakes - James A Corey",
+            "Prey - Michael Crichton",
+            "Cell - Stephen King",
+            "The Martian - Andy Weir",
+            "Autour de la Lune - Jules Verne",
+            "Station Eleven - Emily St. John Mandel",
+            "The Hitchhiker's Guide to the Galaxy - Douglas Adams",
+            "Hyperion - Dan Simmons",
+            "The Sirens of Titan - Kurt Vonnegut",
+            "Ender's Game - Orson Scott Card"
+        ];
+    
+        // Function to display array elements in ascending order
+        function displayTopToBottom() {
+
+            //Clear the contents of the element before printing
+            document.getElementById("arrayPrintArea").innerHTML = "";
+
+            //Loop through array and print the list
+            for (i = 0; i < listOfBooks.length; i++)
+                document.getElementById("arrayPrintArea").innerHTML += (i+1) + ". " + listOfBooks[i] + "<br>";
+        }
+    
+        // Function to display array elements in descending order
+        function displayBottomToTop() {
+
+            //Reverse the array to print it backwards
+            listOfBooks.reverse();
+
+            //Clear the contents of the element before printing
+            document.getElementById("arrayPrintArea").innerHTML = "";
+
+            //Variable to represent the list number
+            var counter = 10;
+
+            //Loop through array and print the list in reverse
+            for (i = 0; i < listOfBooks.length; i++)
+                document.getElementById("arrayPrintArea").innerHTML += (counter - i) + ". " + listOfBooks[i] + "<br>";
+            //"un-reverse" the array
+            listOfBooks.reverse();
+        }
+      </script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+    </div>
+
+    <div id="left-div" >
+        <ol class="ordered-list">
+            <!-- Had to put H3 tag in here so both would get border, same for right div -->
+        <h3>Top 10 Favorite Books</h3>
+            <button onclick="displayTopToBottom()">Top to Bottom</button>
+            <button onclick="displayBottomToTop()">Bottom to Top</button>
+
+            <p id="arrayPrintArea"></p>
+        </ol>
+    </div>
+
+    <div id="right-div">
+        <ul class="unordered-list">
+        <h3>5 Things I've Learned Since the Course Started</h3>
+            <li>I now know that subclasses exist. It's nice to be able to control specific behaviors on certain items.</li>
+            <li>I learned about meta tags and how they are used in the head of HTML documents.</li>
+            <li>I was not aware before that li or a tags could have css without having a class assigned to them.</li>
+            <li>I did not know that you could link to a document that may not exist yet, as long as you know it's name.</li>
+            <li>I learned (several times) to use subclasses with the correct ":" symbol, rather than a ".".</li>
+        </ul>
+    </div>
+
+    <div id="bottom-div">
+        <a id="landing-page-link" href="../index.html">Landing Page</a>
+    </div>
+
+</body>
+
+</html>
